@@ -19,7 +19,14 @@ body {
     font-family: "Roboto Condensed";
 }
 
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
 h3 {
+    color: #41464b;
     text-transform: uppercase;
 }
 
@@ -32,9 +39,6 @@ h3 {
 #home-cover {
     height: 100%;
     background-image: url("../img/bg-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #home-content-box {
@@ -54,6 +58,15 @@ h3 {
     font-size: 55px;
     font-weight: 700;
     margin: 20px 0 20px 0;
+}
+
+/* Parallax (Generic) */
+
+.bg-parallax{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Buttons (Generic) */
@@ -77,4 +90,75 @@ h3 {
     background-color: #fff;
     border-color: #fff;
     color: #41464b;
+}
+
+/* Animations (AnimateCSS) */
+
+#home-cover {
+    animation-delay: .1s;
+    animation-duration: .5s;
+}
+
+#home-heading {
+    animation-delay: .5s;
+    animation-duration: .5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+    animation-duration: .5s;
+}
+
+/* Content (Generic) */
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px auto;
+}
+
+/* Services */
+
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #34c6d3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+    margin: 0;
+    padding-left: 85px;
 }
