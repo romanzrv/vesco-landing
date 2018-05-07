@@ -177,7 +177,12 @@ h3 {
 /* About */
 
 #about-bg-diagonal {
-
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url("../img/bg-about.jpg");
+    border-left: 200px solid #fff;
+    border-top: 700px solid transparent;
 }
 
 #about-content-box {
@@ -206,4 +211,24 @@ h3 {
 
 #about-desc p {
     margin-bottom: 30px;
+}
+
+/* Work */
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform .5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
 }
