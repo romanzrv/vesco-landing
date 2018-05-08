@@ -51,3 +51,15 @@ $(function () {
         autoplayHoverPause: true
     });
 });
+
+/**
+ * Stats
+ **/
+
+$(function () {
+    // Counter-Up
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
