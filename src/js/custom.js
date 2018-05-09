@@ -68,11 +68,40 @@ $(function () {
  * Clients
  **/
 
-// Owl carousel
-$("#clients-list").owlCarousel({
-    items: 6,
-    autoplay: true,
-    smartSpeed: 700,
-    loop: true,
-    autoplayHoverPause: true
+$(function () {
+    // Owl carousel
+    $("#clients-list").owlCarousel({
+        items: 6,
+        autoplay: true,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true
+    });
+});
+
+/**
+ * Navigation
+ **/
+
+//
+$(function () {
+    $(window).scroll(function () {
+       if ($(this).scrollTop() < 50) {
+           $("nav").removeClass("vesco-top-nav");
+       }  else {
+           $("nav").addClass("vesco-top-nav");
+       }
+    });
+});
+
+// Smooth scrolling
+
+$(function () {
+    $("a.smooth-scroll").click(function (event) {
+        event.preventDefault();
+        var section = $(this).attr("href");
+        $('html, body').animate({
+            scrollTop: $(section).offset().top - 64
+        }, 1250);
+    });
 });
